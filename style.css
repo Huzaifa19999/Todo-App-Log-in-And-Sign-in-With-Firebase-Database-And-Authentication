@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#inputTodo {
+    height: 40px;
+    width: 700px;
+    padding: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+#addTodo, #updateTodo, #deleteAllBtn {
+    height: 40px;
+    width: 90px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+#todoList {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.todoItem {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.deleteBtn, .editBtn, #addTodo, #updateTodo, #deleteAllBtn {
+    height: 30px;
+    width: 80px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.deleteBtn, .editBtn {
+    background-color: #ff5858;
+    color: #fff;
+    margin-left: 10px;
+}
+
+#addTodo, #updateTodo, #deleteAllBtn {
+    background-color: #4CAF50;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.deleteBtn:hover, .editBtn:hover, #addTodo:hover, #updateTodo:hover, #deleteAllBtn:hover {
+    background-color: #d43f3a;
+}
+
+#inputTodo::placeholder {
+    color: #ccc;
+}
+
+#inputTodo:focus {
+    outline: none;
+    border: 2px solid #4CAF50;
+}
+/* .deleteAllBtn {
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+    background-color: #ff5858;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+} */
+
+
+.logout {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff5858;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
